@@ -12,14 +12,14 @@ export default function Authenticated({ header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
-        <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col h-screen">
             <nav className="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                                    <img src="https://www.bkn.go.id/unggahan/2023/11/Landscape-logo.png" alt="" className='w-20' />
                                 </Link>
                             </div>
 
@@ -122,7 +122,7 @@ export default function Authenticated({ header, children }) {
                 </header>
             )}
 
-            <main>{children}</main>
+            {children}
         </div>
     );
 }
