@@ -97,7 +97,7 @@ const ChatLayout = ({ children }) => {
                     }`}
                 >
                     {/* Title */}
-                    <div className="flex items-center justify-between py-2 px-3 text-xl font-medium">
+                    <div className="flex items-center justify-between py-2 px-3 text-xl font-medium text-gray-200">
                         My Conversation
                         <div
                             className="tooltip tooltip-left"
